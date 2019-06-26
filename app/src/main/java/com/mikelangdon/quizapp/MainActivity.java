@@ -93,12 +93,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 mScoreTextView.setText("Score: " + mScore);
                 mTextView.setText(mQuestions[mIndex].getTextResId());
-                try {
-                    sleep(8000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.exit(0);
+
+               // create button to kill app
+                // System.exit(0);
+
+                // nts: pressing the right arrow kills the app ungracefully, but still...
 
             }
 
